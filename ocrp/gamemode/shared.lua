@@ -1,4 +1,4 @@
---[[function AutoAdd_LuaFiles()
+function AutoAdd_LuaFiles()
 	if SERVER then
 		for _, file in pairs(file.Find('../gamemodes/' .. GM.Path .. '/gamemode/client/*') || {} ) do
 			if string.find(file,".lua") then
@@ -34,7 +34,7 @@
 		end
 	end
 end
-]]
+
 
 GM.Name 		= "Orange Cosmos RP (ZG)"
 GM.Author 		= "Jake_1305, Noobulator, RealDope"
